@@ -8,6 +8,14 @@ Only drop-in replacements for the standard library's `encoding/json` are conside
 
 Data integrity is verified, however, the time consumed by the verification is not included in the benchmarks.
 
+## Tested libraries
+
+- [encoding/json](https://golang.org/pkg/encoding/json/)
+- [bytedance/sonic](https://github.com/bytedance/sonic)
+- [goccy/go-json](https://github.com/goccy/go-json)
+- [segmentio/encoding/json](https://github.com/segmentio/encoding)
+- [wI2L/jettison](https://github.com/wI2L/jettison)
+
 ## Results
 
 Benchmarks were executed on a Ryzen 9 5900X with 48GB of RAM.
@@ -43,14 +51,6 @@ git clone https://github.com/ggmolly/go-json-benchmarks.git
 cd go-json-benchmarks
 go test -bench . -benchmem -benchtime=5s
 ```
-
-## Tested libraries
-
-- [encoding/json](https://golang.org/pkg/encoding/json/)
-- [bytedance/sonic](https://github.com/bytedance/sonic)
-- [goccy/go-json](https://github.com/goccy/go-json)
-- [segmentio/encoding/json](https://github.com/segmentio/encoding)
-- [wI2L/jettison](https://github.com/wI2L/jettison)
 
 ## Contributing
 
